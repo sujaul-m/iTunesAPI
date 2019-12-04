@@ -30,7 +30,6 @@ function setTable(response){
       <td tableHeadData="Track: ">${response.trackName}</td>
       <td tableHeadData="Genre: ">${response.primaryGenreName}</td>
       <td tableHeadData="Length: ">${duration}</td>
-      <td tableHeadData="Price: ">$${response.trackPrice}</td>
       <td tableHeadData="View: "><a href=${response.trackViewUrl} target="_blank">View</a></td>
       <td tableHeadData="Artwork: " style="border-right: none;"><img class="artwork" src="${response.artworkUrl100}" alt="Album Artwork">
     </tr>`

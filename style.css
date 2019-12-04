@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #737373;
+  background: rgb(102, 204, 255);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ td {
 }
 
 .artwork {
-  height: 60px
+  height: 60px;
   width: 60px;
 }
 
