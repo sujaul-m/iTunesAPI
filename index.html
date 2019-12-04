@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iTunes Search</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <h1 class="heading">iTunes Search</h1>
+
+    <input id="searchBar" type="text" name="input" placeholder="Search iTunes...">
+    <button class="btn" type="button" name="btn">Search</button>
+  </div>
+
+  <h2 id="noResults">No Results Found</h2>
+
+  <div class="tableContainer">
+    <table id="searchResultsTable">
+      <thead>
+        <tr>
+          <th>Artist</th>
+          <th>Album</th>
+          <th>Track Name</th>
+          <th>Genre</th>
+          <th>Length</th>
+          <th>Price</th>
+          <th>Link</th>
+          <th>Artwork</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <script type = "text/javascript" src = "main.js"></script>
+</body>
+</html>

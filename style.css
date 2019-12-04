@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #737373;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-family: 'Raleway', sans-serif, helvetica;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.heading {
+  font-size: 3.5em;
+}
+
+#searchBar {
+  width: 40%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.btn {
+  width: 80px;
+  height: 38px;
+}
+
+.tableContainer {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  width: 90vw;
+  background: rgba(51, 51, 51, 0.3);
+}
+
+thead {
+  text-align: left;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+th {
+  padding: 20px 5px 20px 5px;
+}
+
+#searchResultsTable {
+  width: 100%;
+}
+
+#searchResultsTable, th {
+  border-bottom: 1px solid #a6a6a6;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1px solid #a6a6a6;
+  border-right: 1px solid #a6a6a6;
+  padding: 10px 5px 10px 5px;
+}
+
+.artwork {
+  height: 60px
+  width: 60px;
+}
+
+#noResults {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  #searchResultsTable,
+  #searchResultsTable tbody,
+  #searchResultsTable tr,
+  #searchResultsTable td {
+    display: block;
+  }
+
+  #searchResultsTable thead {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  #searchResultsTable td {
+    border: none;
+    position: relative;
+    padding-left: 40%;
+    white-space: normal;
+  }
+
+  #searchResultsTable tr {
+    border-bottom: 1px solid #a6a6a6;
+  }
+
+  #searchResultsTable td:before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(tableHeadData);
+  }
+
+}
